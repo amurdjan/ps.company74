@@ -1,0 +1,8 @@
+.foto {
+    display: flex;
+}
+
+.foto img {
+    width: 70%;
+    margin: auto;
+}

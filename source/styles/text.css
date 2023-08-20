@@ -1,0 +1,46 @@
+.video-text h1, .map-text h1 {
+    position: relative;
+    top: 50%;  
+    width: 30em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  }
+
+.text h1 {
+    text-align: center;
+    color: #6c96d1;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    text-indent: 30px;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: #6c96d1;
+}
+
+
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }
